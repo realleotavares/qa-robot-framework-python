@@ -33,7 +33,7 @@ jobs:
       run: rfbrowser init
         
     - name: Run Robot Tests
-      run: robot -d results tests/
+      run: robot -d results */tests/
       
     - name: Upload Robot Results
       uses: actions/upload-artifact@v4

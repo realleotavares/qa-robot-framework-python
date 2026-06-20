@@ -1,47 +1,63 @@
 [🇺🇸 English](#english) | [🇧🇷 Português](#português)
 
 <a id="english"></a>
-# QA Robot Framework & Python
+# 🤖 QA Robot Framework & Python
 
-This repository demonstrates the power of **Behavior Driven Development (BDD)** and keyword-driven testing using Python and Robot Framework. It bridges the gap between business requirements and technical test automation.
+This is my secondary QA portfolio, dedicated specifically to test automation using **Python** and **Robot Framework**. I use this repository to demonstrate how I write BDD (Behavior Driven Development) test scripts for different projects.
 
-## Stack & Libraries
-- **Language:** Python 3.10+
-- **Framework:** Robot Framework
-- **Libraries:**
-  - `robotframework-browser`: High-performance UI testing powered by Playwright underneath.
-  - `robotframework-requests`: Backend API validation.
+## 🏗️ Multi-Client Architecture
+Following the same structure as my main QA portfolio, the test scripts here are organized by client folders. This allows me to scale the repository while keeping everything organized.
 
-## Purpose
-While UI automation scripts (like Playwright with TypeScript) are incredibly fast and developer-friendly, **Robot Framework** excels in readability. By abstracting complex logic into natural language keywords, QA engineers can create test suites that Product Owners and Stakeholders can actually read and validate.
+```text
+qa-robot-framework-python/
+├── .github/workflows/        # GitHub Actions (CI Pipeline)
+├── tavardt/                  # [Client 1]
+│   └── tests/
+│       └── tavardt_ui.robot  # BDD UI Test Script
+├── client2/                  # [Client 2]
+│   └── tests/
+```
 
-## How to Run
+## 🛠️ Tech Stack
+- **Python** (Core language)
+- **Robot Framework** (Test runner and Keyword-driven framework)
+- **Browser Library** (High-performance UI testing)
+
+## 🚀 Running the Tests
 ```bash
 pip install -r requirements.txt
 rfbrowser init
-robot -d results tests/
+robot -d results */tests/
 ```
 
 <br><br>
 
 <a id="português"></a>
-# QA Robot Framework & Python
+# 🤖 QA Robot Framework & Python
 
-Este repositório demonstra o poder do **Behavior Driven Development (BDD)** e testes orientados a palavras-chave (keyword-driven) utilizando Python e Robot Framework. Ele atua como uma ponte entre os requisitos de negócio e a automação técnica de testes.
+Este é o meu portfólio secundário de QA, focado especificamente em automação com **Python** e **Robot Framework**. Utilizo este repositório para demonstrar como escrevo scripts de teste baseados em BDD (Behavior Driven Development) na prática.
 
-## Stack e Bibliotecas
-- **Linguagem:** Python 3.10+
-- **Framework:** Robot Framework
-- **Bibliotecas:**
-  - `robotframework-browser`: Testes de UI de alta performance utilizando a engine do Playwright por baixo dos panos.
-  - `robotframework-requests`: Validação de Backend/API.
+## 🏗️ Arquitetura Multi-Cliente
+Seguindo o mesmo padrão do meu portfólio principal, os testes aqui são organizados por pastas de clientes. Isso me permite escalar o repositório mantendo a organização de um projeto real.
 
-## Propósito
-Enquanto scripts de automação de UI (como Playwright com TypeScript) são incrivelmente rápidos e voltados para o desenvolvedor, o **Robot Framework** brilha na legibilidade. Ao abstrair lógicas complexas em palavras-chave (Keywords) de linguagem natural, Analistas de QA podem criar suítes de teste que Product Owners e Stakeholders conseguem ler e validar.
+```text
+qa-robot-framework-python/
+├── .github/workflows/        # Pipeline de CI (GitHub Actions)
+├── tavardt/                  # [Cliente 1]
+│   └── tests/
+│       └── tavardt_ui.robot  # Script de Teste UI (BDD)
+├── client2/                  # [Cliente 2]
+│   └── tests/
+```
 
-## Como Executar
+## 🛠️ Stack Técnica
+- **Python** (Linguagem base)
+- **Robot Framework** (Framework de execução e Keywords)
+- **Browser Library** (Testes de UI de alta performance)
+
+## 🚀 Executando os Testes
 ```bash
 pip install -r requirements.txt
 rfbrowser init
-robot -d results tests/
+robot -d results */tests/
 ```
