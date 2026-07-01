@@ -35,7 +35,7 @@ jobs:
         pip install -r requirements.txt
         
     - name: Initialize Robot Framework Browser
-      run: rfbrowser init
+      run: rfbrowser init chromium
         
     - name: Run Robot Tests
       run: robot -d results */tests/
