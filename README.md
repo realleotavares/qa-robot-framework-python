@@ -69,12 +69,6 @@ robot -d results */tests/
 # 6. The report will be generated at results/log.html
 ```
 
-## Core Competencies Demonstrated
-
-1. **Behavior Driven Development:** Translating business requirements into executable Keywords.
-2. **DevOps & CI/CD:** Robust GitHub Actions pipeline publishing native Robot HTML logs to the cloud.
-3. **High-Performance UI Testing:** Utilizing the modern `robotframework-browser` (Playwright wrapper) instead of the legacy SeleniumLibrary.
-
 ## The QA Engineering Ecosystem
 
 This repository is part of a larger Quality Engineering ecosystem, demonstrating my ability to test applications across the entire testing pyramid. Check out the other layers:
@@ -157,12 +151,6 @@ robot -d results */tests/
 
 # 6. O relatório será gerado no caminho results/log.html
 ```
-
-## Competências Core Demonstradas
-
-1. **Behavior Driven Development:** Traduzindo requisitos de negócio em Keywords executáveis de alto nível.
-2. **DevOps & CI/CD:** Pipeline automatizada via GitHub Actions com deploy direto dos logs do Robot na nuvem.
-3. **Testes UI de Alta Performance:** Uso da moderna biblioteca `robotframework-browser` (baseada em Playwright) no lugar da antiga SeleniumLibrary.
 
 ## O Ecossistema de Engenharia de Qualidade
 
