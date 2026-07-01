@@ -3,61 +3,141 @@
 <a id="english"></a>
 # QA Robot Framework & Python
 
-This is my secondary QA portfolio, dedicated specifically to test automation using **Python** and **Robot Framework**. I use this repository to demonstrate how I write BDD (Behavior Driven Development) test scripts for different projects.
+[![CI/CD Pipeline](https://github.com/realleotavares/qa-robot-framework-python/actions/workflows/robot-pipeline.yml/badge.svg)](https://github.com/realleotavares/qa-robot-framework-python/actions)
+[![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Robot Framework](https://img.shields.io/badge/Robot_Framework-000000?logo=robotframework&logoColor=white)](https://robotframework.org/)
+[![Live Report](https://img.shields.io/badge/Live_Report-GitHub_Pages-blue?logo=github)](https://realleotavares.github.io/qa-robot-framework-python/)
 
-## Multi-Client Architecture
-Following the same structure as my main QA portfolio, the test scripts here are organized by client folders. This allows me to scale the repository while keeping everything organized.
+This is my secondary QA portfolio, dedicated to test automation using **Python** and **Robot Framework**. I use this repository to demonstrate how I write BDD (Behavior Driven Development) test scripts with Keyword-Driven architecture.
+
+## Live Quality Dashboard
+
+> **[View Live HTML Test Report](https://realleotavares.github.io/qa-robot-framework-python/)**
+> 
+> Our CI/CD pipeline automatically publishes the latest Robot Framework execution report (`log.html` and `report.html`) to GitHub Pages. It provides full traceability of keyword execution, variables, and screenshots on failure.
+
+## Repository Architecture (Multi-Client)
+
+Following enterprise standards, the test scripts are organized by client folders, demonstrating scalable modularity for Keyword-Driven Development.
 
 ```text
 qa-robot-framework-python/
-├── .github/workflows/        # GitHub Actions (CI Pipeline)
-├── tavardt/                  # [Client 1]
-│   └── tests/
-│       └── tavardt_ui.robot  # BDD UI Test Script
-├── client2/                  # [Client 2]
-│   └── tests/
+├── README.md                   # This document
+├── requirements.txt            # Python dependencies (robotframework-browser)
+├── .github/workflows/          # CI/CD Pipelines (GitHub Actions & Pages)
+│
+├── core-keywords/              # Common UI interactions and API keywords
+│   └── common.resource         # Reusable behaviors across multiple clients
+│
+└── tavardt-ui/                 # 🌍 Web Front-End testing
+    └── tests/
+        └── login_flow.robot    # BDD scenarios and high-level test cases
 ```
 
-## Tech Stack
-- **Python** (Core language)
-- **Robot Framework** (Test runner and Keyword-driven framework)
-- **Browser Library** (High-performance UI testing)
+## Quick Start (Developer Onboarding)
 
-## Running the Tests
+Want to run these BDD tests locally?
+
+**Prerequisites:** [Python](https://www.python.org/downloads/) (v3.11+) and Node.js (for Browser library)
+
 ```bash
+# 1. Clone the repository
+git clone https://github.com/realleotavares/qa-robot-framework-python.git
+cd qa-robot-framework-python
+
+# 2. Create and activate a virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# 3. Install dependencies
 pip install -r requirements.txt
+
+# 4. Initialize the Browser Library (downloads Playwright binaries internally)
 rfbrowser init
+
+# 5. Run the BDD Test Suite
 robot -d results */tests/
+
+# 6. The report will be generated at results/log.html
 ```
 
-<br><br>
+## Core Competencies Demonstrated
+
+1. **Behavior Driven Development:** Translating business requirements into executable Keywords.
+2. **DevOps & CI/CD:** Robust GitHub Actions pipeline publishing native Robot HTML logs to the cloud.
+3. **High-Performance UI Testing:** Utilizing the modern `robotframework-browser` (Playwright wrapper) instead of the legacy SeleniumLibrary.
+
+---
+*This portfolio is governed by strict CI/CD and engineering standards.*
+
+<br><br><br>
 
 <a id="português"></a>
 # QA Robot Framework & Python
 
-Este é o meu portfólio secundário de QA, focado especificamente em automação com **Python** e **Robot Framework**. Utilizo este repositório para demonstrar como escrevo scripts de teste baseados em BDD (Behavior Driven Development) na prática.
+[![CI/CD Pipeline](https://github.com/realleotavares/qa-robot-framework-python/actions/workflows/robot-pipeline.yml/badge.svg)](https://github.com/realleotavares/qa-robot-framework-python/actions)
+[![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Robot Framework](https://img.shields.io/badge/Robot_Framework-000000?logo=robotframework&logoColor=white)](https://robotframework.org/)
+[![Live Report](https://img.shields.io/badge/Live_Report-GitHub_Pages-blue?logo=github)](https://realleotavares.github.io/qa-robot-framework-python/)
 
-## Arquitetura Multi-Cliente
-Seguindo o mesmo padrão do meu portfólio principal, os testes aqui são organizados por pastas de clientes. Isso me permite escalar o repositório mantendo a organização de um projeto real.
+Este é o meu portfólio secundário de QA, focado especificamente em automação com **Python** e **Robot Framework**. Utilizo este repositório para demonstrar como escrevo scripts de teste baseados em BDD (Behavior Driven Development) usando uma arquitetura *Keyword-Driven*.
+
+## Dashboard de Qualidade (Ao Vivo)
+
+> **[Acessar Relatório HTML Interativo](https://realleotavares.github.io/qa-robot-framework-python/)**
+> 
+> Nossa pipeline CI/CD publica automaticamente o último relatório de execução do Robot Framework (`log.html`) no GitHub Pages. Ele provê rastreabilidade completa de execução de keywords, variáveis e screenshots de falhas.
+
+## Arquitetura do Repositório (Multi-Client)
+
+Seguindo o padrão corporativo, os testes aqui são organizados por pastas de clientes. Isso me permite escalar a arquitetura baseada em Keywords mantendo a organização de um projeto real.
 
 ```text
 qa-robot-framework-python/
-├── .github/workflows/        # Pipeline de CI (GitHub Actions)
-├── tavardt/                  # [Cliente 1]
-│   └── tests/
-│       └── tavardt_ui.robot  # Script de Teste UI (BDD)
-├── client2/                  # [Cliente 2]
-│   └── tests/
+├── README.md                   # Este documento
+├── requirements.txt            # Dependências Python (robotframework-browser)
+├── .github/workflows/          # Pipeline de CI/CD (GitHub Actions)
+│
+├── core-keywords/              # Keywords comuns de UI e API
+│   └── common.resource         # Comportamentos reaproveitáveis
+│
+└── tavardt-ui/                 # 🌍 Testes de interface web
+    └── tests/
+        └── login_flow.robot    # Cenários BDD e casos de teste de alto nível
 ```
 
-## Stack Técnica
-- **Python** (Linguagem base)
-- **Robot Framework** (Framework de execução e Keywords)
-- **Browser Library** (Testes de UI de alta performance)
+## Quick Start (Onboarding de Desenvolvedores)
 
-## Executando os Testes
+Quer rodar estes testes BDD na sua máquina?
+
+**Pré-requisitos:** [Python](https://www.python.org/downloads/) (v3.11+) e Node.js (necessário para a Browser Library)
+
 ```bash
+# 1. Clone o repositório
+git clone https://github.com/realleotavares/qa-robot-framework-python.git
+cd qa-robot-framework-python
+
+# 2. Crie e ative um ambiente virtual
+python -m venv venv
+source venv/bin/activate  # No Windows: venv\Scripts\activate
+
+# 3. Instale as dependências
 pip install -r requirements.txt
+
+# 4. Inicialize a Browser Library (baixa os binários do Playwright internamente)
 rfbrowser init
+
+# 5. Rode a suíte de testes BDD
 robot -d results */tests/
+
+# 6. O relatório será gerado no caminho results/log.html
 ```
+
+## Competências Core Demonstradas
+
+1. **Behavior Driven Development:** Traduzindo requisitos de negócio em Keywords executáveis de alto nível.
+2. **DevOps & CI/CD:** Pipeline automatizada via GitHub Actions com deploy direto dos logs do Robot na nuvem.
+3. **Testes UI de Alta Performance:** Uso da moderna biblioteca `robotframework-browser` (baseada em Playwright) no lugar da antiga SeleniumLibrary.
+
+---
+*Este portfólio é governado por rigorosos padrões de CI/CD e engenharia de software.*
