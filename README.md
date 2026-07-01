@@ -16,6 +16,15 @@ This is my secondary QA portfolio, dedicated to test automation using **Python**
 > 
 > Our CI/CD pipeline automatically publishes the latest Robot Framework execution report (`log.html` and `report.html`) to GitHub Pages. It provides full traceability of keyword execution, variables, and screenshots on failure.
 
+## 🔗 The QA Engineering Ecosystem
+
+This repository is part of a larger Quality Engineering ecosystem, demonstrating my ability to test applications across the entire testing pyramid. Check out the other layers:
+
+- **[Playwright E2E Architecture](https://github.com/realleotavares/portfolio-qa)** (Main E2E Framework)
+- **[Pytest API Automation](https://github.com/realleotavares/pytest-api-automation)** (Backend JSON & Schema validation)
+- **[QA Robot Framework & Python](https://github.com/realleotavares/qa-robot-framework-python)** (BDD & Keyword-Driven UI Testing)
+- **[K6 Performance Testing](https://github.com/realleotavares/k6-performance-testing)** (Load, Stress & Spike Testing SLAs)
+
 ## Repository Architecture (Multi-Client)
 
 Following enterprise standards, the test scripts are organized by client folders, demonstrating scalable modularity for Keyword-Driven Development.
@@ -87,6 +96,15 @@ Este é o meu portfólio secundário de QA, focado especificamente em automaçã
 > **[Acessar Relatório HTML Interativo](https://realleotavares.github.io/qa-robot-framework-python/)**
 > 
 > Nossa pipeline CI/CD publica automaticamente o último relatório de execução do Robot Framework (`log.html`) no GitHub Pages. Ele provê rastreabilidade completa de execução de keywords, variáveis e screenshots de falhas.
+
+## 🔗 O Ecossistema de Engenharia de Qualidade
+
+Este repositório faz parte de um ecossistema maior de Quality Engineering, demonstrando minha habilidade de testar aplicações em todas as camadas da Pirâmide de Testes. Conheça as outras camadas:
+
+- **[Playwright E2E Architecture](https://github.com/realleotavares/portfolio-qa)** (Framework Principal de E2E)
+- **[Pytest API Automation](https://github.com/realleotavares/pytest-api-automation)** (Validação de Backend JSON & Schema)
+- **[QA Robot Framework & Python](https://github.com/realleotavares/qa-robot-framework-python)** (Testes de UI BDD & Keyword-Driven)
+- **[K6 Performance Testing](https://github.com/realleotavares/k6-performance-testing)** (SLAs de Load, Stress & Spike Testing)
 
 ## Arquitetura do Repositório (Multi-Client)
 
