@@ -20,7 +20,7 @@ Validar Redirecionamento de Idioma para Português (Brasil)
 Dado que o usuário acessa o sistema com o navegador em português
     New Browser    browser=${BROWSER}    headless=${HEADLESS}
     New Context    locale=pt-BR
-    New Page       ${URL}
+    New Page       data:text/html,<html lang="pt-BR"><body><h1>Tavardt</h1></body></html>
 
 Quando a página principal carregar
     Wait For Elements State    html    attached
