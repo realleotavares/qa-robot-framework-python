@@ -14,7 +14,7 @@ Validar Redirecionamento de Idioma para Português (Brasil)
     [Tags]             UI    Acessibilidade    Caminho Feliz
     Dado que o usuário acessa o sistema com o navegador em português
     Quando a página principal carregar
-    Então a linguagem da página deve estar configurada para português pt-BR
+    Então a linguagem da página deve estar configurada para português
 
 *** Keywords ***
 Dado que o usuário acessa o sistema com o navegador em português
