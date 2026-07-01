@@ -1,4 +1,4 @@
-[🇺🇸 English](#english) | [🇧🇷 Português](#português)
+[English](#english) | [Português](#português)
 
 <a id="english"></a>
 # QA Robot Framework & Python
@@ -10,21 +10,6 @@
 
 This is my secondary QA portfolio, dedicated to test automation using **Python** and **Robot Framework**. I use this repository to demonstrate how I write BDD (Behavior Driven Development) test scripts with Keyword-Driven architecture.
 
-## Live Quality Dashboard
-
-> **[View Live HTML Test Report](https://realleotavares.github.io/qa-robot-framework-python/)**
-> 
-> Our CI/CD pipeline automatically publishes the latest Robot Framework execution report (`log.html` and `report.html`) to GitHub Pages. It provides full traceability of keyword execution, variables, and screenshots on failure.
-
-## 🔗 The QA Engineering Ecosystem
-
-This repository is part of a larger Quality Engineering ecosystem, demonstrating my ability to test applications across the entire testing pyramid. Check out the other layers:
-
-- **[Playwright E2E Architecture](https://github.com/realleotavares/portfolio-qa)** (Main E2E Framework)
-- **[Pytest API Automation](https://github.com/realleotavares/pytest-api-automation)** (Backend JSON & Schema validation)
-- **[QA Robot Framework & Python](https://github.com/realleotavares/qa-robot-framework-python)** (BDD & Keyword-Driven UI Testing)
-- **[K6 Performance Testing](https://github.com/realleotavares/k6-performance-testing)** (Load, Stress & Spike Testing SLAs)
-
 ## Repository Architecture (Multi-Client)
 
 Following enterprise standards, the test scripts are organized by client folders, demonstrating scalable modularity for Keyword-Driven Development.
@@ -35,13 +20,27 @@ qa-robot-framework-python/
 ├── requirements.txt            # Python dependencies (robotframework-browser)
 ├── .github/workflows/          # CI/CD Pipelines (GitHub Actions & Pages)
 │
+├── comptia/                    # Portal tests
+│   └── tests/
+│       └── search_certification.robot # BDD scenarios
+│
+├── luxury-store/               # E-commerce tests
+│   └── tests/
+│       └── add_to_cart_flow.robot # BDD scenarios
+│
 ├── core-keywords/              # Common UI interactions and API keywords
 │   └── common.resource         # Reusable behaviors across multiple clients
 │
-└── tavardt-ui/                 # 🌍 Web Front-End testing
+└── tavardt-ui/                 # Web Front-End testing
     └── tests/
         └── login_flow.robot    # BDD scenarios and high-level test cases
 ```
+
+## Live Quality Dashboard
+
+> **[View Live HTML Test Report](https://realleotavares.github.io/qa-robot-framework-python/)**
+> 
+> Our CI/CD pipeline automatically publishes the latest Robot Framework execution report (`log.html` and `report.html`) to GitHub Pages. It provides full traceability of keyword execution, variables, and screenshots on failure.
 
 ## Quick Start (Developer Onboarding)
 
@@ -76,6 +75,15 @@ robot -d results */tests/
 2. **DevOps & CI/CD:** Robust GitHub Actions pipeline publishing native Robot HTML logs to the cloud.
 3. **High-Performance UI Testing:** Utilizing the modern `robotframework-browser` (Playwright wrapper) instead of the legacy SeleniumLibrary.
 
+## The QA Engineering Ecosystem
+
+This repository is part of a larger Quality Engineering ecosystem, demonstrating my ability to test applications across the entire testing pyramid. Check out the other layers:
+
+- **[Playwright E2E Architecture](https://github.com/realleotavares/portfolio-qa)** (Main E2E Framework)
+- **[Pytest API Automation](https://github.com/realleotavares/pytest-api-automation)** (Backend JSON & Schema validation)
+- **[QA Robot Framework & Python](https://github.com/realleotavares/qa-robot-framework-python)** (BDD & Keyword-Driven UI Testing)
+- **[K6 Performance Testing](https://github.com/realleotavares/k6-performance-testing)** (Load, Stress & Spike Testing SLAs)
+
 ---
 *This portfolio is governed by strict CI/CD and engineering standards.*
 
@@ -91,21 +99,6 @@ robot -d results */tests/
 
 Este é o meu portfólio secundário de QA, focado especificamente em automação com **Python** e **Robot Framework**. Utilizo este repositório para demonstrar como escrevo scripts de teste baseados em BDD (Behavior Driven Development) usando uma arquitetura *Keyword-Driven*.
 
-## Dashboard de Qualidade (Ao Vivo)
-
-> **[Acessar Relatório HTML Interativo](https://realleotavares.github.io/qa-robot-framework-python/)**
-> 
-> Nossa pipeline CI/CD publica automaticamente o último relatório de execução do Robot Framework (`log.html`) no GitHub Pages. Ele provê rastreabilidade completa de execução de keywords, variáveis e screenshots de falhas.
-
-## 🔗 O Ecossistema de Engenharia de Qualidade
-
-Este repositório faz parte de um ecossistema maior de Quality Engineering, demonstrando minha habilidade de testar aplicações em todas as camadas da Pirâmide de Testes. Conheça as outras camadas:
-
-- **[Playwright E2E Architecture](https://github.com/realleotavares/portfolio-qa)** (Framework Principal de E2E)
-- **[Pytest API Automation](https://github.com/realleotavares/pytest-api-automation)** (Validação de Backend JSON & Schema)
-- **[QA Robot Framework & Python](https://github.com/realleotavares/qa-robot-framework-python)** (Testes de UI BDD & Keyword-Driven)
-- **[K6 Performance Testing](https://github.com/realleotavares/k6-performance-testing)** (SLAs de Load, Stress & Spike Testing)
-
 ## Arquitetura do Repositório (Multi-Client)
 
 Seguindo o padrão corporativo, os testes aqui são organizados por pastas de clientes. Isso me permite escalar a arquitetura baseada em Keywords mantendo a organização de um projeto real.
@@ -116,13 +109,27 @@ qa-robot-framework-python/
 ├── requirements.txt            # Dependências Python (robotframework-browser)
 ├── .github/workflows/          # Pipeline de CI/CD (GitHub Actions)
 │
+├── comptia/                    # Testes do Portal
+│   └── tests/
+│       └── search_certification.robot # Cenários BDD
+│
+├── luxury-store/               # Testes de E-commerce
+│   └── tests/
+│       └── add_to_cart_flow.robot # Cenários BDD
+│
 ├── core-keywords/              # Keywords comuns de UI e API
 │   └── common.resource         # Comportamentos reaproveitáveis
 │
-└── tavardt-ui/                 # 🌍 Testes de interface web
+└── tavardt-ui/                 # Testes de interface web
     └── tests/
         └── login_flow.robot    # Cenários BDD e casos de teste de alto nível
 ```
+
+## Dashboard de Qualidade (Ao Vivo)
+
+> **[Acessar Relatório HTML Interativo](https://realleotavares.github.io/qa-robot-framework-python/)**
+> 
+> Nossa pipeline CI/CD publica automaticamente o último relatório de execução do Robot Framework (`log.html`) no GitHub Pages. Ele provê rastreabilidade completa de execução de keywords, variáveis e screenshots de falhas.
 
 ## Quick Start (Onboarding de Desenvolvedores)
 
@@ -156,6 +163,15 @@ robot -d results */tests/
 1. **Behavior Driven Development:** Traduzindo requisitos de negócio em Keywords executáveis de alto nível.
 2. **DevOps & CI/CD:** Pipeline automatizada via GitHub Actions com deploy direto dos logs do Robot na nuvem.
 3. **Testes UI de Alta Performance:** Uso da moderna biblioteca `robotframework-browser` (baseada em Playwright) no lugar da antiga SeleniumLibrary.
+
+## O Ecossistema de Engenharia de Qualidade
+
+Este repositório faz parte de um ecossistema maior de Quality Engineering, demonstrando minha habilidade de testar aplicações em todas as camadas da Pirâmide de Testes. Conheça as outras camadas:
+
+- **[Playwright E2E Architecture](https://github.com/realleotavares/portfolio-qa)** (Framework Principal de E2E)
+- **[Pytest API Automation](https://github.com/realleotavares/pytest-api-automation)** (Validação de Backend JSON & Schema)
+- **[QA Robot Framework & Python](https://github.com/realleotavares/qa-robot-framework-python)** (Testes de UI BDD & Keyword-Driven)
+- **[K6 Performance Testing](https://github.com/realleotavares/k6-performance-testing)** (SLAs de Load, Stress & Spike Testing)
 
 ---
 *Este portfólio é governado por rigorosos padrões de CI/CD e engenharia de software.*
