@@ -15,25 +15,25 @@ This is my secondary QA portfolio, dedicated to test automation using **Python**
 Following enterprise standards, the test scripts are organized by client folders, demonstrating scalable modularity for Keyword-Driven Development.
 
 ```text
-qa-robot-framework-python/
-├── README.md                   # This document
-├── requirements.txt            # Python dependencies (robotframework-browser)
-├── .github/workflows/          # CI/CD Pipelines (GitHub Actions & Pages)
+📁 qa-robot-framework-python/
+├── 📄 README.md                   # This document
+├── 📄 requirements.txt            # Python dependencies (robotframework-browser)
+├── 📁 .github/workflows/          # CI/CD Pipelines (GitHub Actions & Pages)
 │
-├── comptia/                    # Portal tests
-│   └── tests/
-│       └── search_certification.robot # BDD scenarios
+├── 📁 comptia/                    # Portal tests
+│   └── 📁 tests/
+│       └── 📄 search_certification.robot # BDD scenarios
 │
-├── luxury-store/               # E-commerce tests
-│   └── tests/
-│       └── add_to_cart_flow.robot # BDD scenarios
+├── 📁 luxury-store/               # E-commerce tests
+│   └── 📁 tests/
+│       └── 📄 add_to_cart_flow.robot # BDD scenarios
 │
-├── core-keywords/              # Common UI interactions and API keywords
-│   └── common.resource         # Reusable behaviors across multiple clients
+├── 📁 core-keywords/              # Common UI interactions and API keywords
+│   └── 📄 common.resource         # Reusable behaviors across multiple clients
 │
-└── tavardt-ui/                 # Web Front-End testing
-    └── tests/
-        └── login_flow.robot    # BDD scenarios and high-level test cases
+└── 📁 tavardt-ui/                 # Web Front-End testing
+    └── 📁 tests/
+        └── 📄 login_flow.robot    # BDD scenarios and high-level test cases
 ```
 
 ## Live Quality Dashboard
@@ -98,25 +98,25 @@ Este é o meu portfólio secundário de QA, focado especificamente em automaçã
 Seguindo o padrão corporativo, os testes aqui são organizados por pastas de clientes. Isso me permite escalar a arquitetura baseada em Keywords mantendo a organização de um projeto real.
 
 ```text
-qa-robot-framework-python/
-├── README.md                   # Este documento
-├── requirements.txt            # Dependências Python (robotframework-browser)
-├── .github/workflows/          # Pipeline de CI/CD (GitHub Actions)
+📁 qa-robot-framework-python/
+├── 📄 README.md                   # Este documento
+├── 📄 requirements.txt            # Dependências Python (robotframework-browser)
+├── 📁 .github/workflows/          # Pipeline de CI/CD (GitHub Actions)
 │
-├── comptia/                    # Testes do Portal
-│   └── tests/
-│       └── search_certification.robot # Cenários BDD
+├── 📁 comptia/                    # Testes do Portal
+│   └── 📁 tests/
+│       └── 📄 search_certification.robot # Cenários BDD
 │
-├── luxury-store/               # Testes de E-commerce
-│   └── tests/
-│       └── add_to_cart_flow.robot # Cenários BDD
+├── 📁 luxury-store/               # Testes de E-commerce
+│   └── 📁 tests/
+│       └── 📄 add_to_cart_flow.robot # Cenários BDD
 │
-├── core-keywords/              # Keywords comuns de UI e API
-│   └── common.resource         # Comportamentos reaproveitáveis
+├── 📁 core-keywords/              # Keywords comuns de UI e API
+│   └── 📄 common.resource         # Comportamentos reaproveitáveis
 │
-└── tavardt-ui/                 # Testes de interface web
-    └── tests/
-        └── login_flow.robot    # Cenários BDD e casos de teste de alto nível
+└── 📁 tavardt-ui/                 # Testes de interface web
+    └── 📁 tests/
+        └── 📄 login_flow.robot    # Cenários BDD e casos de teste de alto nível
 ```
 
 ## Dashboard de Qualidade (Ao Vivo)
