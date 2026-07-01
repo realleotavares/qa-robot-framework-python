@@ -11,6 +11,14 @@ This repository uses specific tools to map the business requirements into techni
 
 - **Current Repository Target:** Form submission keyword flows.
 
+
+**Repository Structure:**
+```text
+📁 tavardt
+└── 📁 tests
+    └── 📄 tavardt_ui.robot
+```
+
 ---
 <br><br>
 
@@ -24,3 +32,10 @@ Validar fluxos de contato institucional, internacionalização (i18n) e conformi
 Este repositório utiliza ferramentas específicas para mapear os requisitos de negócio nas camadas técnicas de teste. Aqui está a estratégia para este domínio:
 
 - **Alvo do Repositório Atual:** Fluxos de palavras-chave para submissão de formulários.
+
+**Estrutura do Repositório:**
+```text
+📁 tavardt
+└── 📁 tests
+    └── 📄 tavardt_ui.robot
+```

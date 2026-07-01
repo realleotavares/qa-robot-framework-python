@@ -11,6 +11,14 @@ This repository uses specific tools to map the business requirements into techni
 
 - **Current Repository Target:** E-commerce keyword-driven flows (Add to cart, Checkout).
 
+
+**Repository Structure:**
+```text
+📁 luxury-store
+└── 📁 tests
+    └── 📄 add_to_cart_flow.robot
+```
+
 ---
 <br><br>
 
@@ -24,3 +32,10 @@ Validar operações de carrinho de alto volume, compras concorrentes e restriç�
 Este repositório utiliza ferramentas específicas para mapear os requisitos de negócio nas camadas técnicas de teste. Aqui está a estratégia para este domínio:
 
 - **Alvo do Repositório Atual:** Fluxos guiados por palavras-chave de E-commerce (Adicionar ao carrinho, Checkout).
+
+**Estrutura do Repositório:**
+```text
+📁 luxury-store
+└── 📁 tests
+    └── 📄 add_to_cart_flow.robot
+```

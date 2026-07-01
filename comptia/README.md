@@ -11,6 +11,14 @@ This repository uses specific tools to map the business requirements into techni
 
 - **Current Repository Target:** BDD Business flow (Given I search for a voucher...).
 
+
+**Repository Structure:**
+```text
+📁 comptia
+└── 📁 tests
+    └── 📄 search_certification.robot
+```
+
 ---
 <br><br>
 
@@ -24,3 +32,10 @@ Validar os fluxos de busca, filtragem e aquisição de vouchers para certificaç
 Este repositório utiliza ferramentas específicas para mapear os requisitos de negócio nas camadas técnicas de teste. Aqui está a estratégia para este domínio:
 
 - **Alvo do Repositório Atual:** Fluxo de Negócios BDD (Dado que eu busco por um voucher...).
+
+**Estrutura do Repositório:**
+```text
+📁 comptia
+└── 📁 tests
+    └── 📄 search_certification.robot
+```
